@@ -1,0 +1,14 @@
+services:
+  email-service:
+    build: .
+    volumes:
+      - ./src:/app/src
+    env_file: .env
+    networks:
+      - ms-email
+    ports:
+      - "3000:3000"
+
+networks:
+  ms-email:
+    external: true

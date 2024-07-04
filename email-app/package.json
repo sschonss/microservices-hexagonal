@@ -1,0 +1,16 @@
+{
+    "name": "audio-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "node src/index.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "amqplib": "^0.8.0",
+      "dotenv": "^10.0.0",
+      "mysql2": "^2.2.5"
+    }
+  }
