@@ -2,12 +2,13 @@
 
 namespace App\Adapters;
 
+use App\Ports\Outgoing\MessagePublisherInterface;
 use Exception;
 use PhpAmqpLib\Channel\AMQPChannel;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
 
-class RabbitMQAdapter
+class RabbitMQAdapter implements MessagePublisherInterface
 {
     protected AMQPStreamConnection $connection;
     protected AMQPChannel $channel;
